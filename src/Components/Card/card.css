@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55%;
+  width: 60%;
+}
+
+.orange-card {
+  background-color: hsl(31, 77%, 52%);
+  width: 33.33%;
+  padding: 30px;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.green-card {
+  background-color: hsl(184, 100%, 22%);
+  width: 33.33%;
+  padding: 30px;
+  height: 100%;
+}
+
+.darkgreen-card {
+  background-color: hsl(179, 100%, 13%);
+  width: 33.33%;
+  padding: 30px;
+  height: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.btn {
+  margin-top: 50px;
+  padding: 8px;
+  width: 55%;
+  border-radius: 20px;
+  border: 2px solid white;
+  font-size: 14px;
+  font-weight: 550;
+}
+
+.orange-card .btn {
+  color: orange;
+}
+
+.green-card .btn {
+  color: hsl(184, 100%, 22%);
+}
+
+.darkgreen-card .btn {
+  color: hsl(179, 100%, 13%);
+}
+
+.btn:hover {
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.orange-card,
+.green-card,
+.darkgreen-card,
+h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.card p {
+  color: hsla(0, 0%, 100%, 0.75);
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 15px;
+}
+
+.orange-card p {
+  width: 80%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sedan-img,
+.suv-img,
+.luxury-img {
+  width: 50px;
+}
+
+.green-card p {
+  width: 85%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.darkgreen-card p {
+  width: 90%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 775px) {
+  .container {
+    height: max-content;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: max-content;
+    padding: 2px;
+  }
+
+  .orange-card,
+  .green-card,
+  .darkgreen-card {
+    width: 80%;
+    height: 320px;
+  }
+
+  .orange-card {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .darkgreen-card {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+
+  .card p {
+    font-size: 14px;
+    margin-top: 0;
+    padding-top: 0;
+    width: 100%;
+    height: 70px;
+  }
+
+  .orange-card,
+  .green-card,
+  .darkgreen-card,
+  h2 {
+    font-size: 12px;
+  }
+
+  .btn {
+    margin-top: 15px;
+    width: 30%;
+    padding: 8px;
+    font-size: 13px;
+  }
+}
+
+@media screen and (min-width: 290px) and (max-width: 480px) {
+  .container {
+    height: max-content;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+  }
+
+  .green-card,
+  .orange-card,
+  .darkgreen-card {
+    width: 100%;
+  }
+
+  .green-card p {
+    font-size: 14px;
+  }
+
+  .green-card,
+  .orange-card,
+  .darkgreen-card,
+  h2 {
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 60%;
+    margin-top: 20px;
+  }
+
+  .orange-card {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+  }
+
+  .darkgreen-card {
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
